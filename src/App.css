@@ -1,0 +1,13 @@
+body{
+  background-color: rgb(63, 51, 68);
+  top: 0;
+}
+.icon{
+  display: flex;
+  margin: auto;
+  margin-top: 10vw;
+}
+
+.App {
+  text-align: center;
+}

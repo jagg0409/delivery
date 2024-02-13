@@ -1,0 +1,18 @@
+.barra{
+      display:flex;
+        flex-direction:row;
+        align-Items: center;
+        justify-Content:space-between;
+        background-Color:#372c42ef;
+        padding:2%;
+        box-Shadow:0 0.133vw 2.667vw #000000;
+        position:fixed;
+        font-Size:1vw;
+        width:97%;
+        height: 2vw;
+        z-Index:1;
+        top: 0;
+}
+.fasty{
+margin-top: 1.5vw;
+}
