@@ -12,8 +12,6 @@ const allproducts ={
             {name: 'maiz', price: 2700, img:'/productos/maiz.png'},
             
         ],
-        carro:[],
-        escarrovisible:false,
     },
     
     electronics:{
@@ -29,8 +27,6 @@ const allproducts ={
             {name: 'maiz', price: 2700, img:'/productos/maiz.png'},
             
         ],
-        carro:[],
-        escarrovisible:false,
     }
 }
 

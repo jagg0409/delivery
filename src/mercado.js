@@ -2,8 +2,6 @@ import { Component } from 'react';
 import Productos from './componentes/productos.js'
 import Barra from './componentes/barra.js'
 import '../src/App.css'
-import LoadingScreen from './componentes/loading/loading.js'
-import { Route } from 'react-router-dom';
 import allproducts from './allproducts.js';
 class Mercado extends Component{
   state = {
@@ -33,10 +31,9 @@ class Mercado extends Component{
     }
   }
   
-  clg
   
   mostrarcarro=()=>{
-    this.setState({escarrovisible: !this.state[this.props.name].escarrovisible})
+    this.setState({escarrovisible: !this.state.escarrovisible})
   }
   
   

@@ -28,10 +28,9 @@ mostrarcarro=()=>{
 
 
   componentDidMount() {
-    // Simulate a delay (you can replace this with your actual loading logic)
     this.loadingTimeout = setTimeout(() => {
       this.setState({ isLoading: false });
-    }, 4000);
+    }, 2500);
   }
 
   componentWillUnmount() {

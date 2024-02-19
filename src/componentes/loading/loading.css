@@ -18,8 +18,8 @@
   }
   
 .img-animation{
-  animation: hinge 4s ;
-  animation-delay: 0.5s ;
+  animation: hinge 3s ;
+  animation-delay: 0.2s ;
 }
 @keyframes hinge {
     0% {

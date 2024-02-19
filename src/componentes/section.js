@@ -6,10 +6,9 @@ import './sections.css'
     class Section extends Component{
     render(){
         return(
-            <div className="producto">
-                <img className="img" src={`/${this.props.name}.png`} alt={this.props.name} />
-                <h3>{this.props.name }</h3> 
-                
+            <div className="section">
+                <img className="section-img" src={`/${this.props.name}.png`} alt={this.props.name} />
+                <h3 className="section-h3">{this.props.name }</h3> 
             </div>
         )
 
