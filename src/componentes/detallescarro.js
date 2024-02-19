@@ -7,7 +7,7 @@ const styles ={
         marginTop:'30',
         boxShadow:'0.133vw 0.667vw 1.333vw rgb(0,0,0)',
         borderRadius:'0.667vw',
-        top:'2.5vw',
+        top:'2.7vw',
         right:'2vw',
         zIndex:'2',
         fontSize:'1vw',

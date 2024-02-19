@@ -32,6 +32,8 @@ class Carro extends Component{
     render(){
         const{carro, escarrovisible, mostrarcarro} =this.props
         const cantidad = carro.reduce((acc, el)=>acc+el.cantidad, 0)
+        console.log( "escarrovisible", escarrovisible)
+        console.log( "mostrarcarro", mostrarcarro)
         return(
             <div style={styles.div}>
                 <span style={styles.buble}>

@@ -1,9 +1,9 @@
-.producto{
-    border: solid, 0.133vw #eee;
+.section{
+    border: solid 0.133vw #443b3b5b;
     box-shadow:  0vw 0.267vw 1.7vw #322b38;
-    padding:1.5vw;
+    padding:1vw;
     margin:1.3vw;
-    width: 10vw;
+    width: 13vw;
     height: 15vw;
     border-radius: 1.333vw;
     text-Transform:capitalize;
@@ -12,12 +12,23 @@
     position:relative;
     justify-Content: center;
     align-Items: center;
-    margin-Top:8vw
+    margin-Top:8vw;
+    color: rgb(37, 37, 37);
 }
-.img{
-        width:85%;
-        height:7vw;
+.section-img{
+        width: 85%;
+        height:50%;
         background:#00000056;
-        border-Radius:1vw;
+        border-Radius:0vw 4vw 4vw 4vw;
         padding:1vw
     }
+.section-h3{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 223, 223, 0.233);
+    border: solid rgba(255, 255, 255, 0.349) 0.05vw;
+    padding: 0.5vw;
+    border-Radius:5vw 0vw 5vw 0vw;
+}

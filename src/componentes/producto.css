@@ -1,0 +1,24 @@
+
+    .product{
+        border: solid, 0.133vw #eee;
+        box-Shadow: 0vw 0.567vw 1.7vw #04121d;
+        padding:1.5vw;
+        margin:1.3vw;
+        width: 15vw;
+        height: 20vw;
+        border-Radius: 1.333vw;
+        text-Transform:capitalize;
+        font-Size:1.2vw;
+        background:#a47fca90;
+        position:relative;
+        justify-Content: center;
+        align-Items: center;
+        margin-Top:8vw
+    }
+    .producto-img{
+        width:90%;
+        height:9vw;
+        background:#00000069;
+        border-Radius:1vw;
+        padding:1vw;
+    }
