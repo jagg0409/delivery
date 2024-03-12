@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Producto from './producto.js'
+import Producto from './producto-inside.js'
 const styles ={
     productos:{
         position:'relative',
@@ -7,7 +7,6 @@ const styles ={
         flexFlow: 'row wrap',
         justifyContent: 'center',
         alignItems: 'center',
-       
 }
 }
 

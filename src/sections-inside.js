@@ -3,10 +3,12 @@ import Productos from './componentes/productos.js'
 import Barra from './componentes/barra.js'
 import '../src/App.css'
 import allproducts from './allproducts.js';
-class Mercado extends Component{
+class Inside extends Component{
   state = {
     mercado: allproducts.mercado,
     electronics: allproducts.electronics,
+    alcohol:allproducts.alcohol,
+
     
   carro:[],
   escarrovisible:false,
@@ -65,5 +67,5 @@ class Mercado extends Component{
     }
     
   }
-  export default Mercado;
+  export default Inside;
   

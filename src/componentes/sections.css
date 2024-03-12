@@ -27,8 +27,10 @@
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: rgba(223, 223, 223, 0.233);
+    background-color: rgba(208, 150, 226, 0.233);
     border: solid rgba(255, 255, 255, 0.349) 0.05vw;
     padding: 0.5vw;
     border-Radius:5vw 0vw 5vw 0vw;
+    text-decoration: underline rgba(255, 170, 43, 0.233);
+    
 }

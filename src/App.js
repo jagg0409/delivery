@@ -5,7 +5,7 @@ import './App.css';
 
 import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
-import Mercado from "./mercado";
+import Inside from "./sections-inside";
 import Inicio from "./inicio";
 
 class App extends Component {
@@ -21,14 +21,16 @@ class App extends Component {
 
 
 <Route exact path={`/mercado`} element={
-  <Mercado name="mercado"></Mercado>
+  <Inside name="mercado"></Inside>
 } />
 
 <Route exact path={`/electronics`} element={
-  <Mercado name="electronics"></Mercado>
+  <Inside name="electronics"></Inside>
 } />
 
-
+<Route exact path={`/alcohol`} element={
+  <Inside name="alcohol"></Inside>
+} />
 
 </Routes>
         )

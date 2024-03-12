@@ -1,0 +1,11 @@
+.button-buy{
+    background-Color: #54228675;
+        color:#ffffff;
+        border:none;
+        border-Radius:2.667vw;
+        box-Shadow:0vw 0.4vw 1.2vw #000000;
+        cursor:pointer;
+        font-Size:1vw; 
+        padding: 0.5vw 1.5vw;
+        float: right;
+    }
