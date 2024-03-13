@@ -12,7 +12,7 @@ class Producto extends Component{
                 <p className="product-description">{producto.description} </p>
                 <img className="product-img" src={producto.img} alt={producto.name} />
                 <footer className="product-footer">
-                <p className="product-price">${producto.price}</p>
+                <p className="product-price">From  ${producto.price}</p>
                 <Button onClick={ () => agregarAlcarro(producto) }>
                 </Button>
                 </footer>

@@ -2,8 +2,9 @@
     .product{
         border: solid, 0.133vw #eee;
         box-Shadow: 0vw 0.567vw 1.7vw #04121d;
-        padding:1.7vw;
+        padding:2vw;
         padding-top: 1vw;
+        padding-bottom: 1vw;
         margin:1.3vw;
         width: 15vw;
         height: 21vw;
@@ -41,9 +42,9 @@
     }
     .product-description{
         font-weight: 450;
-        color: #393a3a;
+        color: #2d2e2e;
         margin-top: 0vw;
-        font-size: 1vw;
+        font-size: 1.1vw;
         margin-bottom: 1.7vw;
     }
     .product-footer{
@@ -51,11 +52,13 @@
         justify-content: center;
         align-items: center;
         flex-flow: row;
-        gap: 7.5vw;
-        height: 2vw;
+        gap: 5.5vw;
+        height: 0.5vw;
         margin-top: 2.5vw;
     }
     .product-price{
-        
         font-size: 1.05vw;
+        width: auto;
+        display: inline-block;
+        white-space: nowrap;
     }
