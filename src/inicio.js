@@ -1,32 +1,33 @@
 import { Component } from 'react';
-import Barra from './componentes/barra.js'
 import '../src/App.css'
 import LoadingScreen from './componentes/loading/loading.js'
 import { Link } from "react-router-dom"
 import Section from './componentes/section.js';
+import Barra from './componentes/barra.js';
+import Producto from './componentes/producto-inside.js';
+import allproducts from './allproducts.js';
 
 const styles ={
   productos:{
-      position:'relative',
-      display:'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'center',
+    position:'relative',
+    display:'flex',
+    flexFlow: 'row wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
 }
 }
 class Inicio extends Component{
-  
-state = {
-  carro:[],
-  escarrovisible:false,
-  isLoading: true,
-}
-
+  state = {
+    mercado: allproducts.mercado,
+    electronics: allproducts.electronics,
+    alcohol:allproducts.alcohol,
+    carro:[],
+    escarrovisible:false,
+    isLoading: true,
+  }
 mostrarcarro=()=>{
   this.setState({escarrovisible: !this.state.escarrovisible})
 }
-
-
   componentDidMount() {
     this.loadingTimeout = setTimeout(() => {
       this.setState({ isLoading: false });
@@ -36,10 +37,26 @@ mostrarcarro=()=>{
   componentWillUnmount() {
     clearTimeout(this.loadingTimeout);
   }
-
+  agregarAlcarro = (producto) =>{
+    const {carro}= this.state;
+    if (carro.find(x => x.name === producto.name)){
+      const newcarro = carro.map(x => x.name === producto.name?({
+        ...x, cantidad: x.cantidad + 1  
+      })
+      :x)
+      return this.setState({carro:newcarro})
+    }
+    else{
+      return this.setState({
+        carro: this.state.carro.concat({
+          ...producto, cantidad: 1,
+        })
+      })
+    }
+  }
   render() {
     
-    
+    const {escarrovisible}=this.state
     const { isLoading } = this.state;
 
     if (isLoading) {
@@ -50,8 +67,6 @@ mostrarcarro=()=>{
         </div>
       );
     }
-    const {escarrovisible}=this.state
-    console.log(this.state.carro);
     return(
       
       <div style={styles.productos}> 
@@ -59,8 +74,6 @@ mostrarcarro=()=>{
         escarrovisible={escarrovisible}
         mostrarcarro={this.mostrarcarro}
         /> 
-        
-        
         <Link to={'/mercado'} >
         <Section name ='mercado' />
           </Link>
@@ -84,7 +97,15 @@ mostrarcarro=()=>{
           <Link to={'/walmart'}>
         <Section name ='walmart'/>
           </Link>
-         
+          <div  style={styles.productos}>
+          {this.state.mercado.productos.map(producto =>
+                    <Producto
+                    agregarAlcarro={this.agregarAlcarro}
+                    key={producto.name}
+                    producto={producto}
+                    />
+                    )}
+                    </div>
       </div>
       )
     }

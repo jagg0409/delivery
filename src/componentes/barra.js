@@ -11,11 +11,16 @@ class Barra extends Component{
         return(
             <nav className="barra">
                 <Link to={'/'} >
-                <Logo></Logo>
-                </Link>
-                <Link to={'/'} >
                 <img src="/fasty.png" className="fasty"/>
                 </Link>
+                <section className="sections">
+                <h3>Shop</h3>
+                <h3>About</h3>
+                <h3>Contact</h3>
+                <h3>Careers</h3>
+                </section>
+                <img src="/loupe.png" alt="search" className="search"/>
+                <img src="/user.png" alt="user" className="user"/>
                 <Carro 
                 carro={carro}
                 escarrovisible={escarrovisible}

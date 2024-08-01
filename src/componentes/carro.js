@@ -11,7 +11,8 @@ const styles ={
         borderRadius:'2.667vw',
         cursor:'pointer',
         width:'6vw',
-        fontSize:'1vw'
+        fontSize:'1vw',
+        
     },
     buble:{
         right:'4.5vw',
@@ -19,8 +20,10 @@ const styles ={
         position:'absolute'
     },
     div:{
-        position:'relative',
-        display:'flex'
+        position:'absolute',
+        display:'flex',
+        right:'0',
+        margin:'2vw'
     },
     carroimg:{
         with:'2.5vw',
